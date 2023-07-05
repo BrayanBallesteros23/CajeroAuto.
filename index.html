@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Js</title>
+    <link rel="stylesheet" href="cajerocss.css">
+</head>
+<body>
+    <form action="">
+        <h1>Ingresar</h1>
+        <label for="">Usuario:</label>
+        <input type="text" name="u" id="user.relleno">
+        <label for="">Contraseña:</label>
+        <input type="password" name="c" id="">
+        <input type="button" value="Ingresar" id="contraseña-text" onclick="login(this.form)">
+    </form>
+    <script>
+            function login(form){
+                if (form.u.value=="johan") {
+                    if (form.c.value=="1234") {
+                        alert("Datos Correctos")
+                        location="principal.html";
+                    } else {
+                        alert("error de password")
+                    }
+                } else {
+                    alert("error de usuario")
+                }
+            }
+    </script>
+</body>
+</html>
